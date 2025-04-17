@@ -1,0 +1,87 @@
+{
+    "pages": [
+        {
+            "path": "pages/login/index",
+            "style": {
+                "navigationBarTitleText": "登录",
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/index/index",
+            "style": {
+                "navigationBarTitleText": "首页",
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/detail/detail",
+            "style": {
+                "navigationBarTitleText": "会员管理",
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/chat/chat",
+            "style": {
+                "navigationBarTitleText": "课程进度",
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/profile/profile",
+            "style": {
+                "navigationBarTitleText": "我的",
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/webview/webview",
+            "style": {
+                "navigationBarTitleText": "网页浏览",
+                "navigationStyle": "custom"
+            }
+        }
+    ],
+    "tabBar": {
+        "color": "#64748b",
+        "selectedColor": "#3b82f6",
+        "backgroundColor": "#ffffff",
+        "borderStyle": "white",
+        "fontSize": "12px",
+        "iconWidth": "24px",
+        "height": "56px",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/static/tabbar/home.png",
+                "selectedIconPath": "/static/tabbar/home_fill.png"
+            },
+            {
+                "pagePath": "pages/detail/detail",
+                "text": "会员管理",
+                "iconPath": "/static/tabbar/friend_add.png",
+                "selectedIconPath": "/static/tabbar/friend_add_fill.png"
+            },
+            {
+                "pagePath": "pages/chat/chat",
+                "text": "授课进度",
+                "iconPath": "/static/tabbar/edit_light.png",
+                "selectedIconPath": "/static/tabbar/form_fill_light.png"
+            },
+            {
+                "pagePath": "pages/profile/profile",
+                "text": "我的",
+                "iconPath": "/static/tabbar/wang.png",
+                "selectedIconPath": "/static/tabbar/wang_fill.png"
+            }
+        ]
+    },
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "uni-app",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    }
+}

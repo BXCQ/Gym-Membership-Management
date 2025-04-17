@@ -1,0 +1,150 @@
+/* 全局样式变量 */
+:root {
+    --primary-color: #3b82f6;
+    --gradient-primary: linear-gradient(90deg, #4A90E2, #8A2BE2);
+    --background-color: #f7f8fa;
+    --card-background: #ffffff;
+    --text-color: #323233;
+    --text-color-light: #969799;
+    --border-color: #ebedf0;
+    --active-color: #3b82f6;
+    --danger-color: #ee0a24;
+    --success-color: #07c160;
+    --warning-color: #ff976a;
+    --box-shadow: 0 2px 12px rgba(100, 101, 102, 0.08);
+    --border-radius: 12px;
+}
+
+/* 全局基础样式 */
+page {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Segoe UI, Arial, Roboto, 'PingFang SC', 'miui', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+}
+
+/* 通用卡片样式 */
+.card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin: 12px;
+    padding: 16px;
+}
+
+/* 列表项样式 */
+.list-item {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    margin: 8px 12px;
+    padding: 16px;
+    box-shadow: var(--box-shadow);
+}
+
+/* 按钮样式重写 */
+.van-button--info {
+    background: var(--gradient-primary) !important;
+    border: none !important;
+}
+
+/* 导航栏样式重写 */
+.van-tabbar {
+    box-shadow: 0 -1px 6px rgba(100, 101, 102, 0.08) !important;
+}
+
+.van-tabbar-item--active {
+    color: var(--active-color) !important;
+}
+
+/* 表单样式重写 */
+.van-field {
+    background-color: transparent !important;
+}
+
+/* 加载和刷新样式 */
+.van-pull-refresh, .van-list {
+    background-color: transparent !important;
+}
+
+/* 页面通用容器 */
+.page-container {
+    min-height: 100vh;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+/* 文字样式 */
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--text-color-light);
+    margin-bottom: 8px;
+}
+
+/* 分割线 */
+.divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 12px 0;
+}
+
+/* 头像样式 */
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+/* 标签样式 */
+.tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--primary-color);
+    background-color: rgba(74, 144, 226, 0.1);
+}
+
+/* 徽标样式 */
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    min-width: 16px;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 4px;
+    font-size: 12px;
+    text-align: center;
+    background-color: var(--danger-color);
+    border-radius: 8px;
+    color: #fff;
+}
+
+/* TabBar导航栏增强样式 */
+.uni-tabbar {
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1) !important;
+    border-top: 1px solid #f1f5f9 !important;
+}
+
+.uni-tabbar-bottom {
+    padding-bottom: env(safe-area-inset-bottom) !important;
+}
+
+.uni-tabbar__item {
+    padding: 6px 0 !important;
+}
+
+.uni-tabbar__label {
+    line-height: 1.2 !important;
+    font-weight: 500 !important;
+    transform: scale(0.9) !important;
+} 
